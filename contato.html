@@ -1,0 +1,142 @@
+<!--esse codigo vai ter uma nav bar pois esta vinculado tudo no bootstrep-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ifud- os melhores produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.0/font/bootstrap-icons.min.css">
+</head>
+<!--A nav bar tem uma imagem e a escrita do ifud tanbem na nav bar tem o inico,o pedido e as categorias 
+que são os produtos que o ifud-->
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="bi bi-cake2"></i>iFud</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pedidos.html">Pedido</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pizza.html">Pizza</a></li>
+                            <li><a class="dropdown-item" href="hamburger.html">Hamburguer</a></li>
+                            <li><a class="dropdown-item" href="sushi.html">sushi</a></li>
+                            <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="buscar" aria-label="buscar" />
+                    <button class="btn btn-outline-success" type="submit">buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--aqui começa a descrever oque vai ter no contato da pessoa são os dados dela e tentei fazer que ela colacasse a foto
+    -->
+    <header class="bg-primary text-black text-center py 5">
+        <div class="container">
+            <h1 class="display-4">Coloque seu dados !!!</h1>
+            <p>receba em casa </p>
+        </div>
+
+    </header>
+    <section id="produto" clas="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">
+                            Digite seu Dados
+                        </button>
+                
+                       
+                
+                    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="meuModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="meuModalLabel">Suas informação</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="nome" 
+                                                placeholder="Digite seu nome">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">E-mail</label>
+                                            <input type="text" class="form-control" id="email" 
+                                                placeholder="Digite seu e-mail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mensagem" class="form-label">Bairro</label>
+                                            <input type="text" class="form-control" id="email" 
+                                            placeholder="Digite seu Bairro">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mensagem" class="form-label">numero da Casa ou apartamento</label>
+                                            <input type="text" class="form-control" id="email" 
+                                            placeholder="Digite seu numero">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="mensagem" class="form-label">Forma de pagamento</label>
+                                            <input type="text" class="form-control" id="email" 
+                                            placeholder="Digite como vai pagar??">
+                                        </div>
+                                        <div class="text-center">
+                                            <img src="imagens/imagem.jfif" alt="Logo do site" width="100" />
+                                          </div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+
+    </section>
+    < <footer class="bg-dark text-whiter text-center py-5">
+        <p>&copy; &lt;TS&gt; 2025 - tibursio soft</p>
+        <p>Reunindo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;soluções</p>
+        <a href="" class="text-whiter me3"><i class="bi bi-linkedin"></i></a>
+        <a href="" class="text-whiter me3"><i class="bi bi-github"></i></a>
+        <a href="" class="text-whiter me3"><i class="bi bi-envelope-fill"></i></a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+            integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
